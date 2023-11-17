@@ -1,12 +1,17 @@
+# This file was created by: Carter Godinez
+# Content from Chris Bradfield; Kids Can Code
+# KidsCanCode - Game Development with Pygame video series
+# Video link: https://youtu.be/OmlQ0XCvIn0 
+
 # game settings 
-WIDTH = 360
-HEIGHT = 480
+WIDTH = 720
+HEIGHT = 720
 FPS = 30
-SCORE = 0
 
 # player settings
 PLAYER_JUMP = 30
-PLAYER_GRAV = 1.5
+PLAYER_GRAV = 2.5
+PLAYER_FRIC = 0.2
 
 # define colors
 WHITE = (255, 255, 255)
@@ -14,13 +19,10 @@ BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
-SKYBLUE = (150, 200, 255)
 
-# starting platforms
-PLATFORM_LIST = [(0, HEIGHT - 40, WIDTH, 40, " "),
-                 (WIDTH / 2 - 50, HEIGHT * 3 / 4, 100, 20, " "),
-                 (125, HEIGHT - 350, 100, 20, "moving"),
-                 (350, 200, 100, 20, " "),
-                 (175, 100, 50, 20, " "),
-                 (100, 250, 50, 50, " "),
-                 (300, 300, 100, 10, " ")]
+# define platforms
+PLATFORM_LIST = [(0, HEIGHT * 3 / 4, 75, 20,"moving"),
+                 (0, HEIGHT - 40, WIDTH, 40, "normal"),
+                 (150, 120, 100, 20, "moving"),
+                 (0, 250, 75, 20, "moving"),
+                 (175, 400, 100, 20, "moving")]
